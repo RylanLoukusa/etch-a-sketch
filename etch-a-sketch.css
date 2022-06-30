@@ -1,1 +1,107 @@
 
+
+body {
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ }
+ 
+ h1 {
+     text-align:center;
+     color: peachpuff;
+     font-size: 80px;
+   }
+   
+   .buttons {
+     color:black;
+     display: flex;
+     justify-content: center;
+ 
+     
+   }
+ 
+   .color-choice {
+     background-color:  peachpuff;
+     padding: 5px;
+     margin: 10px;
+     font-size: 20px;
+     border-radius: 5px;
+   }
+ 
+   .grid-options {
+     color:  peachpuff;
+   }
+ 
+   .clear {
+    background-color:  peachpuff;
+    font-size: 20px;
+    border-radius: 5px;
+   }
+   
+ 
+   .container {
+     display: grid;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+    
+   }
+ 
+   .container-wrapper {
+     height: 75vw;
+     width: 75vw;
+     max-height: var(--content-width);;
+     max-width: var(--content-width);
+     margin: 30px auto;
+     position: relative;
+     
+    
+ }
+   
+ .container > * {
+     height: 100%;
+     transition: all 0.5s;
+     background-color: white;
+ 
+ }
+ 
+ .container-wrapper {
+     height: 75vw;
+     width: 75vw;
+     max-height: var(--content-width);;
+     max-width: var(--content-width);
+     margin: 30px auto;
+     position: relative;
+     border: solid 5px;
+     border-color: grey
+ }
+ 
+ .grid-options {
+     width: (75vw + 40px);
+     margin-bottom: 30px;
+     max-width: (var(--content-width) + 40px);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+        
+ }
+ 
+ .grid-options > * {
+     flex: 1 1 auto;
+     margin: 30px;
+ }
+
+ p {
+    font-size: 25px;
+ }
+ 
+ .slide {
+    width: 55vw;
+ }
+ 
+   footer {
+     color:  peachpuff;
+   }
