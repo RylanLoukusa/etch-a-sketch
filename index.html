@@ -10,25 +10,25 @@
 </head>
 <body>
     <h1> Etch-a-Sketch </h1>
-    <div class="Buttons">
-            <button class="color-choice" data-color="black" type="button">Black</button>
-            <button class="color-choice" data-color="rainbow" type="button">Rainbow</button>
-            <button class="color-choice" data-color="eraser" type="button">Eraser</button>
-    
-    </div>
+    <div class="section">
+        <div class="grid-options">
+                 <button class="color-choice" data-color="black" type="button">Black</button>
+                 <button class="color-choice" data-color="rainbow" type="button">Rainbow</button>
+                 <button class="color-choice" data-color="eraser" type="button">Eraser</button>
 
-    <div class="container-wrapper"> 
-        <div class="container"></div>
-    </div>
+          <div class ="size-container">
+             <p><b><strong>Pixel Size: </strong></b></p>
+             <input type="range" min="4" max="100" value="15" id="sizeRange" class="slide">
+          </div>
+          <button class="clear" type="button"> Clear </button>
+     </div>
+
+     <div class="container-wrapper"> 
+            <div class="container"></div>
+     </div>
+
+</div>
     
-    <div class="grid-options">
-        <button class="clear" type="button"> Clear </button>
-        <div class ='size-container'>
-            <p><strong>Pixel Size</strong></p>
-            <input type="range" min="4" max="100" value="15" id="sizeRange" class="slide">
-            <p> 4px to 100px</p>
-        </div>
-    </div>
 
 
 </body>

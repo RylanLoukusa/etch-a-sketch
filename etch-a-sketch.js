@@ -3,6 +3,7 @@ const clearButton = document.querySelector('.clear');
 const colorButtons = document.querySelectorAll('.color-choice');
 var slider = document.querySelector('#sizeRange');
 var color = 'black'
+
 function createGrid(gridNumber) {
   let gridSize = gridNumber * gridNumber
   for (let i=1; i <= gridSize; i++) {
@@ -67,7 +68,7 @@ function userColorSelection(event) {
 }
 
 //Size when page is loaded
-createGrid(16)
+createGrid(2)
 
 clearButton.addEventListener('click',eraseBoard);
 colorButtons.forEach(colorButton => colorButton.addEventListener('click', changeColor));

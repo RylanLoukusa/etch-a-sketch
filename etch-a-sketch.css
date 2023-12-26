@@ -8,40 +8,48 @@ body {
     align-items: center;
     min-height: 100vh;
  }
+
+ .section {
+  margin-right: 30vw;
+  display: flex;
+  flex-direction: row;
+ }
  
  h1 {
      text-align:center;
-     color: peachpuff;
+     color: rgb(255, 230, 209);
      font-size: 80px;
+     margin-top: 10px;
    }
-   
-   .buttons {
+
+.grid-options {
+  display: flex;
+  flex-direction: column;
+  color:  peachpuff;
+  padding-left: 10vw;;
+}
+
+p {
+  font-size: 25px;
+}
+
+.slide {
+  width: 20vw;
+}
+
+p, .slide {
+  margin-left: 0vw;
+}
+
+   button {
      color:black;
-     display: flex;
-     justify-content: center;
- 
-     
-   }
- 
-   .color-choice {
      background-color:  peachpuff;
-     padding: 5px;
-     margin: 10px;
+     padding: 10px;
      font-size: 20px;
      border-radius: 5px;
+     width:10vw;
    }
- 
-   .grid-options {
-     color:  peachpuff;
-   }
- 
-   .clear {
-    background-color:  peachpuff;
-    font-size: 20px;
-    border-radius: 5px;
-   }
-   
- 
+
    .container {
      display: grid;
      width: 100%;
@@ -51,14 +59,11 @@ body {
    }
  
    .container-wrapper {
-     height: 75vw;
+     height: 75vh;
      width: 75vw;
-     max-height: var(--content-width);;
+     max-height: var(--content-width);
      max-width: var(--content-width);
-     margin: 30px auto;
      position: relative;
-     
-    
  }
    
  .container > * {
@@ -69,19 +74,21 @@ body {
  }
  
  .container-wrapper {
-     height: 75vw;
-     width: 75vw;
+     height: 80vh;
+     width: 50vw;
      max-height: var(--content-width);;
      max-width: var(--content-width);
-     margin: 30px auto;
+     margin: 10px auto;
      position: relative;
      border: solid 5px;
-     border-color: grey
+     border-color: grey;
+     margin-top: -30px;
+
  }
  
  .grid-options {
      width: (75vw + 40px);
-     margin-bottom: 30px;
+     margin-top: -50px;
      max-width: (var(--content-width) + 40px);
      display: flex;
      justify-content: center;
@@ -94,13 +101,6 @@ body {
      margin: 30px;
  }
 
- p {
-    font-size: 25px;
- }
- 
- .slide {
-    width: 55vw;
- }
  
    footer {
      color:  peachpuff;
